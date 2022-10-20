@@ -9,6 +9,9 @@
 let kilometres = parseInt(prompt('I chilometri che vuoi percorrere sono?'));
 let age = parseInt(prompt('quanti anni hai?'));
 if(age <= 17){
-    let priceTotal = parseFloat(Math. trunc(0.21 * kilometres) * 0.20)
-console.log(priceTotal)
+    let priceTotal = parseFloat((0.21 * kilometres) * 0.20).toFixed(2)
+    console.log('Il prezzo totale è:' , priceTotal + '€')
+} else if(age >= 65) {
+    let priceTotal = parseFloat((0.21 * kilometres) * 0.40).toFixed(2)
+    console.log('Il prezzo totale è:' , priceTotal + '€')
 }
