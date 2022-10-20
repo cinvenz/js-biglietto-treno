@@ -15,3 +15,7 @@ if(age <= 17){
     let priceTotal = parseFloat((0.21 * kilometres) * 0.40).toFixed(2)
     console.log('Il prezzo totale è:' , priceTotal + '€')
 }
+else {
+    let priceTotal = parseFloat((0.21 * kilometres)).toFixed(2)
+    console.log('Il prezzo totale è:' , priceTotal + '€')
+}
