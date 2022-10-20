@@ -9,13 +9,13 @@
 let kilometres = parseInt(prompt('I chilometri che vuoi percorrere sono?'));
 let age = parseInt(prompt('quanti anni hai?'));
 if(age <= 17){
-    let priceTotal = parseFloat((0.21 * kilometres) * 0.20).toFixed(2)
-    console.log('Il prezzo totale è:' , priceTotal + '€')
+    let priceTotal = Math.round((0.21 * kilometres) * 0.20 * 100) / 100;
+    console.log('Il prezzo totale è:' , priceTotal + '€');
 } else if(age >= 65) {
-    let priceTotal = parseFloat((0.21 * kilometres) * 0.40).toFixed(2)
-    console.log('Il prezzo totale è:' , priceTotal + '€')
+    let priceTotal = Math.round((0.21 * kilometres) * 0.40 * 100) / 100;
+    console.log('Il prezzo totale è:' , priceTotal + '€');
 }
 else {
-    let priceTotal = parseFloat((0.21 * kilometres)).toFixed(2)
-    console.log('Il prezzo totale è:' , priceTotal + '€')
+    let priceTotal = Math.round(kilometres * 0.21 * 100) / 100;
+    console.log('Il prezzo totale è:' , priceTotal + '€');
 }
